@@ -37,8 +37,8 @@ PlanC bridges the gap between individual travelers heading in the same direction
 ---
 
 ## 📷 Screenshots  
-![alt text](<WhatsApp Image 2025-04-08 at 14.28.50 (1).jpeg>) ![alt text](<WhatsApp Image 2025-04-08 at 14.28.50.jpeg>) ![alt text](<WhatsApp Image 2025-04-08 at 14.28.51 (1).jpeg>) ![alt text](<WhatsApp Image 2025-04-08 at 14.28.51.jpeg>) ![alt text](<WhatsApp Image 2025-04-08 at 14.28.52.jpeg>)
-<video controls src="WhatsApp Video 2025-04-11 at 12.48.33.mp4" title="Title"></video>
+![alt text](output1.jpeg) ![alt text](output2.jpeg)![alt text](output3.jpeg) ![alt text](output4.jpeg) ![alt text](output5.jpeg) <video controls src="output6.mp4" title="alt text"></video>
+
 ---
 
 ## 📌 Installation  
