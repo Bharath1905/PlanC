@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "373190022852",
+    "firebase_url": "https://blablacar-34bf2-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "blablacar-34bf2",
+    "storage_bucket": "blablacar-34bf2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373190022852:android:7cfd64ed39dc057adcdb91",
+        "android_client_info": {
+          "package_name": "com.pemchip.blablacar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiP0cxNout0PsQtVNVNKe2IcQJMT4403E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

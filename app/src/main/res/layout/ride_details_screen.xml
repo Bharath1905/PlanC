@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/userAvatarTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Ride Details"
+                android:padding="22dp"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/hld_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/cardDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Indico, TN 22 DE 2314"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.pemchip.blablacar.common.CustomFontIcon
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/red"
+                            android:text="@string/icon_round"/>
+
+                        <TextView
+                            android:id="@+id/fromAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chennai"
+                            android:paddingLeft="8dp"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/routeLine"
+                        android:layout_width="1dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_below="@+id/from"
+                        android:background="@color/text_color_tertiary"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/routeLine"
+                        android:orientation="horizontal">
+
+                        <com.pemchip.blablacar.common.CustomFontIcon
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/green"
+                            android:text="@string/icon_round"/>
+
+                        <TextView
+                            android:id="@+id/toAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chennai"
+                            android:paddingLeft="8dp"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/cancelRide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Cancel Ride"
+                        android:textColor="@color/red"
+                        android:textSize="14sp"
+                        android:layout_marginRight="16dp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/passenger"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 Seats"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="12dp"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/to_rounded_bg"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/dateAndTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12/01/2025, 11:15 PM"
+                        android:layout_centerVertical="true"
+                        android:layout_centerInParent="true"
+                        android:drawableRight="@drawable/to_rounded_bg"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:id="@+id/bookingBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Book"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/login_btn"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/bookingCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 bookings"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:textColor="@color/teal_700"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/bookingStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 bookings"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:textColor="@color/teal_700"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Bookings"
+                    android:paddingHorizontal="12dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hld_no_bookings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="No Bookings"
+                    android:visibility="gone"
+                    android:padding="12dp"
+                    android:textSize="14sp"/>
+
+                <GridLayout
+                    android:id="@+id/gridLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:columnCount="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Routes"
+                    android:paddingHorizontal="12dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:id="@+id/routes_gridLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:columnCount="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actionBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:layout_marginVertical="12dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/trackBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/outlin_btn"
+                    android:text="Track"
+                    android:layout_marginRight="12dp"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/rideCompletedBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/login_btn"
+                    android:text="Ride Completed"
+                    android:backgroundTint="@color/green"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/hldTravellerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/labelText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="Traveller Details"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnLyt"
+            android:layout_below="@+id/labelText">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/mainView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/btnLyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginVertical="12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/outlin_btn"
+                android:text="Cancel"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/confirmBtn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/login_btn"
+                android:text="Confirm"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

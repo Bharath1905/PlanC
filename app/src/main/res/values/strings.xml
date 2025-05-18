@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PlanC</string>
+    <string name="google_maps_key">AIzaSyBZTa54DJKug5XGFoAqWvs26pYfjo7CN44</string>
+
+    <string name="icon_home">&#xe88a;</string>
+    <string name="icon_user">&#xe7fd;</string>
+    <string name="icon_trip">&#xe940;</string>
+    <string name="icon_email">&#xe158;</string>
+    <string name="icon_currency">&#xeaf7;</string>
+    <string name="icon_car">&#xe531;</string>
+    <string name="icon_time">&#xe8b5;</string>
+    <string name="icon_warning">&#xe002;</string>
+    <string name="icon_round">&#xe836;</string>
+
+</resources>

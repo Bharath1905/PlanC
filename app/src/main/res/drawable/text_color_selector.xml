@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when the text is pressed -->
+    <item android:state_pressed="true" android:color="#FFFFFF"/>  <!-- Orange color when pressed -->
+    <item android:state_focused="true" android:color="#FFFFFF"/>  <!-- Green color when focused -->
+    <item android:state_checked="true" android:color="#FFFFFF"/>  <!-- Green color when focused -->
+    <item android:color="#000000"/>  <!-- Black color for normal state -->
+</selector>
